@@ -23,4 +23,8 @@ patterns: [
     name:'string.quoted.double.mu'
     match:'\\|\\|.*\\|\\|'
   }
+  {
+    name:'markup.quote'
+    match:'{.*}'
+  }
 ]
