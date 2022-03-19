@@ -1,0 +1,26 @@
+scopeName: 'source.mu'
+name: 'Mu-Lang'
+fileTypes: [ '.µ','.mu' ]
+limitLineLength: false
+patterns: [
+  {
+    comment: 'Use this to explain the function of the rule, if necessary'
+    name: 'comment.line.mu'
+    match: '//.*$'
+  }
+  {
+    comment:"le saint mu"
+    name:'markup.heading.1.html'
+    match:'µ'
+  }
+  {
+    comment:'hehe'
+    name:'keyword.control.mu'
+    match: '(µ|loq|add|partio|mul|inferioris|aequalis|dum|si|indo|verum|falsum|et|ubi|ord|indicium)'
+  }
+  {
+    comment:'Filium'
+    name:'string.quoted.double.mu'
+    match:'\\|\\|.*\\|\\|'
+  }
+]

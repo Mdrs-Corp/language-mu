@@ -1,0 +1,16 @@
+{
+  "name": "language-mu",
+  "version": "0.0.1",
+  "description": "A mu language grammar package",
+  "repository": "https://github.com/momoladebrouill/language-mu",
+  "keywords": [
+    "syntax",
+    "highlighting",
+    "grammar"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/momoladebrouill/language-mu/issues",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
