@@ -14,9 +14,20 @@ patterns: [
     match:'µ'
   }
   {
-    comment:'hehe'
     name:'keyword.control.mu'
-    match: '(µ|loq|add|partio|mul|inferioris|aequalis|dum|si|indo|verum|falsum|et|ubi|ord|indicium)'
+    match: '(loq|inferioris|aequalis|dum|si|et|ubi)'
+  }
+  {
+    name:'keyword.operator.mu'
+    match:'(add|partio|mul)'
+  }
+  {
+    name:'constant.language.mu'
+    match:'(µ|verum|falsum)'
+  }
+  {
+    name:'variable.other.mu'
+    match:'(indo|officium|ord|red)'
   }
   {
     comment:'Filium'
@@ -24,7 +35,7 @@ patterns: [
     match:'\\|\\|.*\\|\\|'
   }
   {
-    name:'markup.quote'
+    name:'markup.quote.mu'
     match:'{.*}'
   }
 ]
