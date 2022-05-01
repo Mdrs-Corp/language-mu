@@ -1,6 +1,6 @@
 {
   "name": "language-mu",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "A mu language grammar package",
   "repository": "https://github.com/momoladebrouill/language-mu",
   "keywords": [
