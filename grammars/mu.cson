@@ -4,22 +4,33 @@ fileTypes: [ '.µ','.mu' ]
 limitLineLength: false
 patterns: [
   {
-    comment: 'Use this to explain the function of the rule, if necessary'
-    name: 'comment.line.mu'
-    match: '//.*$'
-  }
-  {
-    comment:"le saint mu"
     name:'markup.heading.1.html'
+	comment:"le saint mu"
     match:'µ'
   }
   {
-    name:'keyword.control.mu'
-    match: '(loq|inferioris|aequalis|dum|si|et|ubi)'
+	name:'keyword.control.conditional.mu'
+	match:'si'
+  }
+  {
+	name:'keyword.control.statement.mu'
+	match:'red'
+  }
+  {
+    comment: 'keyword operators that evaluate to True or False'
+    match: '(et|ubi)'
+    name: 'keyword.operator.logical.mu'
+  }
+  {
+    name:'keyword.control.repeat.mu'
+    match: 'dum'
+  }
+    match: '(inferioris|aequalis)'
+    name: 'keyword.operator.comparison.mu'
   }
   {
     name:'keyword.operator.mu'
-    match:'(add|partio|mul)'
+    match:'(add|partio|mul|)'
   }
   {
     name:'constant.language.mu'
@@ -27,7 +38,7 @@ patterns: [
   }
   {
     name:'variable.other.mu'
-    match:'(indo|officium|ord|red)'
+    match:'(indo|officium|ord|loq|qua)'
   }
   {
     comment:'Filium'
@@ -36,6 +47,6 @@ patterns: [
   }
   {
     name:'markup.quote.mu'
-    match:'{.*}'
+    match:'({.*}|ind)'
   }
 ]
